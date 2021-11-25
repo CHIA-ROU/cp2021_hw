@@ -5,51 +5,13 @@
 <p>網站倉儲: <a href="https://github.com/mdecourse/cp2021_hw">https://github.com/</a><a href="https://chia-rou.github.io/cp2021_hw/content/index.html">chia-rou/cp2021_hw</a><a href="https://github.com/mdecourse/cp2021_hw"></a></p>
 <p>網站連結: <a href="https://chia-rou.github.io/cp2021_hw/content/index.html">https://chia-rou.github.io/cp2021_hw/content/index.html</a>  </p>
 <p>其他與個人或作業相關資料說明或介紹 </p>
-<p>
-<script src="/static/brython.js"></script>
-<script src="/static/brython_stdlib.js"></script>
-</p>
-<!-- 啟動 Brython -->
-<p>
-<script>
-window.onload=function(){
-    brython();
-}
-</script>
-</p>
-<!-- 頁面載入後執行 brythonListener() -->
-<p>
-<script>
-$(document).ready( function() {
-    brythonListener();
-});
-</script>
-</p>
-<!-- 建立讓 Javascript 執行的 brython 程式 -->
-<p>
-<script type="text/python">
-from browser import document
-from browser import window
-
-def run():
-    prog = open(document.query["src"]).read()
-    ns = {'__name__':'__main__'}
-    exec(prog, ns)
-
-# 透過 window 將 Brython 的 run() 函式與 Javascript 的  brythonListner 函式對應
-window.brythonListener = run()
-</script>
-</p>
-<!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 -->
-<div id="brython_div"></div>
 <!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
-<p>
 <script src="https://mde.tw/cp2021/cmsimde/static/Cango-24v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/gearUtils-09.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
-</p><h2>GitExtensions</h2>
+<h2>GitExtensions</h2>
 <p><a href="https://github.com/mdecourse/cad2021/files/7517136/GitExtensions_hybrid.zip">下載尚未個人化設定的 GitExtensions</a></p>
 <p>利用 GitExtensions 輸入提交訊息時, 若出現字串 highlight 表示提交字串可能不會被 Github 接受, 導致<span> </span><a href="https://github.com/mdecourse/cad2021_hw/commit/fafa93e9925892354f02996006a965bbd2b4a56e">Github Pages 轉檔錯誤</a>, 網頁將無法正常連線. 修正錯誤後, 以正確的提交字串 push, 可以得到正確的<a href="https://github.com/mdecourse/cad2021_hw/commit/09d98e1dfc4a0cfda2edae530efb5e08ac1f47ba">轉檔結果</a>.</p>
 <p>GitExtensions 設定:</p>
@@ -157,7 +119,8 @@ run()
 <p>以下為上一頁 rungist 的原始碼:</p>
 <p><a href="/downloads/run.txt">run.txt</a></p>
 <h2>SSH</h2>
-<p>putty</p><h2>Hybrid</h2>
+<p>putty</p>
+<h2>Hybrid</h2>
 <p>將 start_ipv4.bat 與部分檔案放在 USB 隨身碟, 使用 C 槽的 Python395 與 Portablegit:</p>
 <p>start_ipv4.bat, data, tmp, wscite 與 home_ipv4, home_ipv6 放在隨身碟:</p>
 <div>

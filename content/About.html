@@ -146,51 +146,13 @@ img.add_border {
 <p>網站倉儲: <a href="https://github.com/mdecourse/cp2021_hw">https://github.com/</a><a href="https://chia-rou.github.io/cp2021_hw/content/index.html">chia-rou/cp2021_hw</a><a href="https://github.com/mdecourse/cp2021_hw"></a></p>
 <p>網站連結: <a href="https://chia-rou.github.io/cp2021_hw/content/index.html">https://chia-rou.github.io/cp2021_hw/content/index.html</a>  </p>
 <p>其他與個人或作業相關資料說明或介紹 </p>
-<p>
-<script src="./../cmsimde/static/brython.js"></script>
-<script src="./../cmsimde/static/brython_stdlib.js"></script>
-</p>
-<!-- 啟動 Brython -->
-<p>
-<script>
-window.onload=function(){
-    brython();
-}
-</script>
-</p>
-<!-- 頁面載入後執行 brythonListener() -->
-<p>
-<script>
-$(document).ready( function() {
-    brythonListener();
-});
-</script>
-</p>
-<!-- 建立讓 Javascript 執行的 brython 程式 -->
-<p>
-<script type="text/python">
-from browser import document
-from browser import window
-
-def run():
-    prog = open(document.query["src"]).read()
-    ns = {'__name__':'__main__'}
-    exec(prog, ns)
-
-# 透過 window 將 Brython 的 run() 函式與 Javascript 的  brythonListner 函式對應
-window.brythonListener = run()
-</script>
-</p>
-<!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 -->
-<div id="brython_div"></div>
 <!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
-<p>
 <script src="https://mde.tw/cp2021/cmsimde/static/Cango-24v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/gearUtils-09.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
-</p><br /> <a href='GitExtensions.html'>Next</a> >> GitExtensions</div>
+<br /> <a href='GitExtensions.html'>Next</a> >> GitExtensions</div>
         
     <!-- footer -->
       <div class="container">
