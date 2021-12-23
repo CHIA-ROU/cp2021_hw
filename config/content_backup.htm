@@ -10,7 +10,7 @@
 <script src="https://mde.tw/cp2021/cmsimde/static/gearUtils-09.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
-<script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script><h2>run</h2>
+<script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script><h2>snake_run</h2>
 <!-- 導入 brython 程式庫 -->
 <p>
 <script src="/static/brython.js"></script>
@@ -60,10 +60,7 @@ Ace = ace.Editor(editor_id="kw_editor", console_id="kw_console", container_id="k
 # 從 gist 取出程式碼後, 放入 editor 作為 default 程式
 def run():
     # 利用 get 取下 src 變數值
-    try:
-        url = doc.query["src"]
-    except:
-        url = "https://gist.githubusercontent.com/mdecourse/e896a4705a95ac8cc4147b355b0e87ef/raw/8954b8280c524c5781dc3c0b3565bc489d3aa3a3/cango_gear1.py"
+    url = "https://gist.githubusercontent.com/CHIA-ROU/11b2ba032bd450c7e65104c1e04407b1/raw/70202f3630b804bcb600e1851f2242388030baa8/BSnake"
     prog = open(url).read()
 
     # 將程式載入編輯區
@@ -518,7 +515,7 @@ check_input()
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/VGkcmBaeAGM" title="YouTube video player" width="560"></iframe></p>
 <p><a href="https://github.com/mdecourse/snake-ai-pytorch">https://github.com/mdecourse/snake-ai-pytorch</a></p>
 <h1>BSnake</h1>
-<h2>run</h2>
+<h2>snake run</h2>
 <!-- 導入 brython 程式庫 -->
 <p>
 <script src="/static/brython.js"></script>
